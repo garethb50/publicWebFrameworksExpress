@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+    div.container
+        form
+            div.col-md-6.col-md-offset-2
+                h1 Login
+                br
+                br
+                label Email
+                input.form-control(type='text' formControlName='email' required)
+                br
+                label Password
+                input.form-control(type='password' formControlName='password' required)
+                br
+                div.form-actions
+                    button.btn.btn-success Login
+                    br
+                    br
+                    span
+                        a(href='/register') Register

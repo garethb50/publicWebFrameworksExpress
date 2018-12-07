@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+    div.container
+        form
+            div.col-md-9.col-md-offset-2
+                h1 Users
+                table.table
+                    thead.thead-dark
+                    tr
+                        th.col ID
+                        th.col Email
+                        th.col Password
+                        th.col FirstName
+                        th.col Location
+                        th.col Delete
+                        tbody
+                            each detail in details
+                                tr
+                                    td= detail.id
+                                    td= detail.email
+                                    td= detail.password
+                                    td= detail.firstName
+                                    td= detail.location
+                                    td.button.btn.btn-danger Delete

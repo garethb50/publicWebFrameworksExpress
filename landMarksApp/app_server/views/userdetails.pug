@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+
+    div.container
+        form
+            div.col-md-6.col-md-offset-2
+                h1 Update Details
+
+                label Email
+                input.form-control(type='text' formControlName='email' value="al@al.com" required)
+                br
+                label Password
+                input.form-control(type='password' formControlName='password' value="password1234" required)
+                br
+                label First Name
+                input.form-control(type='text' formControlName='firstname' value="Alan" required)
+                br
+                label Location
+                input.form-control(type='text' formControlName='location' value="Kerry" required)
+                br
+                div.form-actions
+                    button.btn.btn-success Update
+
+

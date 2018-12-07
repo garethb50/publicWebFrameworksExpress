@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1= pageHeader.title
+        h3 &nbsp;#{pageHeader.strapline}
+        .col-12.col-md-8
+            each detail in details
+                .jumbotron
+                        p= 'Name: ' + detail.name
+                        p= 'Country: ' + detail.country
+                        img(src=detail.image alt=detail.value heigth=550 width=550)
+                        p= 'Latitude: ' + detail.coords.lat
+                        p= 'Longitude: ' + detail.coords.lng
+                        p= 'Value: ' + detail.value
+                        button Search

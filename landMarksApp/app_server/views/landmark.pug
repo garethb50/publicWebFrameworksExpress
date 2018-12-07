@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= pageHeader.title
+    .col-12.col-md-8
+            .jumbotron
+                    p= 'Name: ' + details.name
+                    p= 'Country: ' + details.country
+                    img(src=details.image alt=details.value heigth=550 width=550)
+                    p= 'Latitude: ' + details.coords.lat
+                    p= 'Longitude: ' + details.coords.lng
+                    p= 'Value: ' + details.value
